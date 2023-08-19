@@ -1,0 +1,106 @@
+.card_in_list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 282px;
+  list-style: none;
+  position: relative;
+}
+.element {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 282px;
+  list-style: none;
+  position: relative;
+}
+.element__image {
+  cursor: pointer;
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0 0;
+}
+.element__group {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 31px;
+  max-width: 282px;
+  font-size: 24px;
+  line-height: 29px;
+}
+.element__name {
+  align-self: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 900;
+  padding-left: 21px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 220px;
+  margin: 0;
+}
+
+.element__likes {
+  display: flex;
+  flex-direction: column;
+}
+
+.element__like {
+  padding-left: 7px;
+  max-width: 9px;
+  max-height: 13px;
+  font-size: 13px;
+}
+.element__like-button {
+  width: 21px;
+  height: 19px;
+  margin-top: 5px;
+  margin-right: 15px;
+  background-image: url('../images/like.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  border-width: 0;
+  border-radius: 0;
+}
+.element__like-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.element__button_liked {
+  background-image: url('../images/like-active.svg');
+}
+.element__delete-button {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url('../images/Trash.svg');
+  min-height: 19px;
+  min-width: 18px;
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+.element__delete-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.element__delete-button_visible {
+  visibility: visible;
+}
+.element__delete-button_hidden {
+  visibility: hidden;
+}
+.card__delete-button_visible {
+  visibility: visible;
+}
+.card__delete-button_hidden {
+  visibility: hidden;
+}
